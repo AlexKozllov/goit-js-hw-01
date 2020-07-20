@@ -6,11 +6,11 @@ let numberOfDroid = prompt("Какое количество дроидов Вы 
 let totalPrice;
 let balance;
 let validData;
-if (numberOfDroid == undefined) {
+if (numberOfDroid === null) {
   console.log("Отменено пользователем!");
 } else {
-  totalPrice = numberOfDroid * prisePerDroid;
-  if (totalPrice >= credits) {
+  totalPrice = Number(numberOfDroid) * prisePerDroid;
+  if (totalPrice > credits) {
     console.log("Недостаточно средств на счету!");
   } else if (totalPrice == false) {
     console.log("Обновите страницу и пропробуйте сново");

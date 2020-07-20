@@ -7,11 +7,9 @@ const inPassword = prompt("Введите пароль");
 
 if (inPassword === ADMIN_PASSWORD) {
   message = "Добро пожаловать!";
-  console.log(message);
-} else if (inPassword == undefined) {
+} else if (inPassword === null) {
   message = "Отменено пользователем!";
-  console.log(message);
 } else {
   message = "Доступ запрещен, неверный пароль!";
-  console.log(message);
 }
+console.log(message);
